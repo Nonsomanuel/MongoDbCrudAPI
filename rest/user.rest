@@ -1,0 +1,25 @@
+GET http://localhost:3000/user HTTP/1.1
+
+###
+GET http://localhost:3000/user/636d07c1167425925292b985 HTTP/1.1
+
+###
+POST http://localhost:3000/user HTTP/1.1
+Contente-Content-Type: application/json
+
+{
+    "title": "Grocery Shopping",
+    "description": "Pending"
+}
+
+###
+PUT http://localhost:3000/user/ HTTP/1.1
+Content-Type: application/json
+
+{
+    "title": "Going to the cinema",
+    "description": "pending"
+}
+
+###
+DELETE http://localhost:3000/user/ HTTP/1.1
